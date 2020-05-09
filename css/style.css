@@ -792,6 +792,7 @@ textarea {
 
 body {
   max-width: 1920px;
+  margin: 0 auto;
 }
 
 .header {
@@ -1439,29 +1440,31 @@ body {
 }
 
 .article_btn_link {
-  -webkit-mask-image: url(../img/link.svg);
-          mask-image: url(../img/link.svg);
   left: 35%;
   width: 25px;
   height: 25px;
-  background-color: #fff;
 }
 
-.article_btn_link:hover {
-  background-color: #c7b299;
+.btn_link {
+  fill: #fff;
+}
+
+.btn_link:hover {
+  fill: #c7b299;
 }
 
 .article_btn_search {
-  -webkit-mask-image: url(../img/lupa.svg);
-          mask-image: url(../img/lupa.svg);
   left: 55%;
   width: 25px;
   height: 24px;
-  background-color: #fff;
 }
 
-.article_btn_search:hover {
-  background-color: #c7b299;
+.btn_search {
+  fill: #fff;
+}
+
+.btn_search:hover {
+  fill: #c7b299;
 }
 
 .btn_load {
@@ -1472,5 +1475,151 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   margin-top: 45px;
+}
+
+/* Section_3 */
+.section_3 {
+  max-width: 100%;
+  min-height: 100%;
+  margin-top: 80px;
+}
+
+.video_section_3 {
+  overflow: hidden;
+  position: relative;
+  padding-top: 45%;
+  background: rgba(0, 0, 0, 0.6);
+  padding-top: 45%;
+}
+
+.bgvideo_section_3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.btn_play {
+  width: 100px;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: auto;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.icon_play {
+  margin: auto;
+  fill: #fff;
+}
+
+.icon_play:hover {
+  fill: #000000;
+}
+
+.txt_section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+  margin-top: 225px;
+}
+
+.heading_section_3 {
+  font-size: 30px;
+  font-family: "Raleway";
+  color: #fff;
+  line-height: 1.2;
+  max-width: 552px;
+  margin: auto;
+  margin-top: 44px;
+}
+
+.text_section_3 {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: #8c8c8c;
+  line-height: 1.75;
+  text-align: center;
+  max-width: 552px;
+  min-height: 43px;
+  margin: auto;
+  margin-top: 30px;
+}
+
+.time_section_3 {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #c7b299;
+  line-height: 1.714;
+}
+
+/* Section_4 */
+.section_4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 80px;
+}
+
+.txt_section_4 {
+  margin-top: 115px;
+  margin-left: 29px;
+}
+
+.heading_section_4 {
+  font-size: 30px;
+  font-family: "Raleway";
+  color: #555555;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.text_section_4 {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: #8c8c8c;
+  line-height: 1.75;
+  max-width: 657px;
+  max-height: 100%;
+  text-align: left;
+  margin-top: 40px;
+}
+
+.list_section_4 {
+  margin-left: 40px;
+  margin-top: 50px;
+}
+
+.list_item_section_4 {
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: #8c8c8c;
+  line-height: 2;
+}
+
+.list_section_4 > .list_item_section_4 {
+  padding-left: 50px;
+  position: relative;
+}
+
+.list_section_4 > .list_item_section_4:before {
+  content: '';
+  background-image: url(../img/section_4_before.png);
+  position: absolute;
+  background-position: center;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  color: black;
+  width: 29px;
+  height: 29px;
 }
 /*# sourceMappingURL=style.css.map */
