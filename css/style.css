@@ -1223,7 +1223,8 @@ body {
       justify-content: space-around;
   max-width: 100%;
   min-height: 102px;
-  background-image: url(../img/Background_section_1.jpg);
+  background: -webkit-linear-gradient(top right #211b19, #4e3427);
+  background: -webkit-radial-gradient(top left, #211b19, #4e3427);
   position: relative;
   z-index: 2;
   bottom: 20px;
@@ -1621,5 +1622,412 @@ body {
   color: black;
   width: 29px;
   height: 29px;
+}
+
+/* Section 5 */
+.section_5 {
+  max-width: 100%;
+  min-height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  background: -webkit-linear-gradient(top right #211b19, #4e3427);
+  background: -webkit-radial-gradient(top left, #211b19, #4e3427);
+}
+
+.fig_item_section_5 {
+  width: 152px;
+  height: 171px;
+  text-align: center;
+  margin: 0 35px;
+}
+
+.fig_item_section_5:after {
+  content: "";
+  position: relative;
+  top: 30px;
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+  margin: 0 auto;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.fig_item_section_5:first-child, .fig_item_section_5:last-child {
+  margin: 0;
+}
+
+.txt_item_section_5 {
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+}
+
+.numbers_item_section_5 {
+  font-size: 48px;
+  font-family: "Montserrat";
+  color: white;
+  line-height: 0.75;
+  margin-top: 32px;
+}
+
+.text_item_section_5 {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #c7b299;
+  text-transform: uppercase;
+  line-height: 1.429;
+  margin-top: 22px;
+}
+
+/* Section 6 */
+.section_6 {
+  max-width: 100%;
+  margin-top: 80px;
+}
+
+.heading_section_6 {
+  font-size: 30px;
+  font-family: "Raleway";
+  color: #555555;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.text_section_6 {
+  padding-top: 30px;
+  font-size: 16px;
+  font-family: "Montserrat";
+  color: #8c8c8c;
+  line-height: 1.75;
+  text-align: center;
+  max-width: 753px;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.images_articles_6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  margin-top: 26px;
+}
+
+.article_section_6 {
+  max-width: 370px;
+  min-height: 270px;
+  position: relative;
+  margin: 0 20px;
+  border: 1px solid #f8f8f8;
+}
+
+.article_section_6:hover {
+  background-color: #362f2d;
+}
+
+.article_section_6:hover .image_article_section_6 {
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+}
+
+.article_section_6:hover .txt_article_image_article {
+  background-color: #c7b299;
+}
+
+.article_section_6:hover .txt_2_article_image_article {
+  background-color: #a48d72;
+}
+
+.article_section_6:hover .pagination_image_article_6 {
+  visibility: hidden;
+}
+
+.article_section_6:hover .text_article_section_6 {
+  color: #bda992;
+}
+
+.article_section_6:hover .text_2_article_section_6 {
+  color: #fff;
+}
+
+.pagination_image_article_6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.heading_article_image {
+  width: 50px;
+  height: 60px;
+  position: absolute;
+  text-align: center;
+  top: 23px;
+  left: 23px;
+  z-index: 3;
+}
+
+.txt_article_image_article {
+  display: block;
+  font-size: 24px;
+  font-family: "Montserrat";
+  color: white;
+  line-height: 0.833;
+  text-align: center;
+  background-color: #363636;
+  padding: 5px 0 5px 0;
+  border-radius: 5px 5px 0 0;
+}
+
+.txt_2_article_image_article {
+  display: block;
+  font-size: 12px;
+  font-family: "Roboto";
+  color: white;
+  line-height: 1.667;
+  background-color: #252525;
+  padding: 5px 0 5px 0;
+  border-radius: 0 0 5px 5px;
+}
+
+.pagination_item_article_6 {
+  display: block;
+  width: 11px;
+  height: 11px;
+  bottom: 40px;
+  background-color: #b7b8bb;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  margin: 0 10px 0 0;
+  position: relative;
+}
+
+.pagination_item_article_6:last-child {
+  margin: 0;
+}
+
+.pagination_item_article_6:hover {
+  background-color: transparent;
+  border: 2px solid #d3c1ad;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.txt_after_article_6 {
+  padding: 10px 0 0 20px;
+  position: relative;
+}
+
+.text_article_section_6 {
+  font-size: 20px;
+  font-family: "Raleway";
+  color: #555555;
+  line-height: 1.2;
+}
+
+.text_2_article_section_6 {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #8c8c8c;
+  line-height: 1.571;
+  text-align: left;
+  padding-top: 10px;
+}
+
+.btn_article_section_6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #c7b299;
+  line-height: 1.429;
+  padding-top: 10px;
+}
+
+.btn_article_section_6:after {
+  content: "\002023";
+  position: relative;
+  left: 10px;
+  display: block;
+}
+
+.btns_section_6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btn_section_6 {
+  width: 22px;
+  height: 22px;
+  margin: 20px 10px 60px 10px;
+}
+
+.btun_section_6 {
+  fill: #d1d1d1;
+}
+
+.btun_section_6:hover {
+  fill: #cfbda8;
+}
+
+/* Section 7 */
+.section_7 {
+  background-image: url(../img/photo_bg_section_7.jpg);
+  max-width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 489px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.logo_section_7 {
+  margin: 0 60px;
+}
+
+/* Footer */
+.footer_1 {
+  background-color: #191919;
+  max-width: 100%;
+  min-height: 508px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.text_footer {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #555555;
+  line-height: 1.714;
+  width: 258px;
+}
+
+.footer_read {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #555555;
+  line-height: 1.714;
+  color: #fff;
+}
+
+.post_heading {
+  margin: 0px 20px;
+}
+
+.post_heading:hover .text_footer {
+  color: #c7b299;
+}
+
+.posts {
+  display: block;
+  max-width: 271px;
+  margin-top: 25px;
+  border-bottom: 1px solid #252525;
+  padding-bottom: 25px;
+}
+
+.posts:first-child {
+  margin: 0;
+}
+
+.posts:last-child {
+  border: none;
+  padding-bottom: 0;
+}
+
+.posts:hover .text_coloumn_footer {
+  color: #c7b299;
+}
+
+.posts:hover .txt_coloumn_footer {
+  color: #fff;
+}
+
+.coloumn_heading_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 60px;
+  margin-bottom: 30px;
+}
+
+.heading_footer_coloumn {
+  font-size: 24px;
+  font-family: "Raleway";
+  color: white;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.txt_coloumn_footer {
+  font-size: 12px;
+  font-family: "Montserrat";
+  color: #363636;
+  line-height: 1.667;
+}
+
+.text_coloumn_footer {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: #555555;
+  line-height: 1.714;
+}
+
+.text_coloumn_footer span {
+  color: #00bff3;
+}
+
+.images_post_heading {
+  max-width: 350px;
+}
+
+.image_post_footer {
+  margin: 5px 5px;
 }
 /*# sourceMappingURL=style.css.map */
