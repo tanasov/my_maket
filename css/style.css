@@ -1051,7 +1051,7 @@ body {
   border: 2px solid transparent;
   margin: 0 10px 0 0;
   position: relative;
-  top: 280px;
+  top: 240px;
 }
 
 .pagination_item:last-child {
@@ -1511,6 +1511,10 @@ body {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
+.btn_play:focus {
+  outline: none;
+}
+
 .icon_play {
   margin: auto;
   fill: #fff;
@@ -1924,6 +1928,11 @@ body {
   margin: 0 60px;
 }
 
+.logo_section_7:hover {
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
+}
+
 /* Footer */
 .footer_1 {
   background-color: #191919;
@@ -1955,15 +1964,23 @@ body {
 
 .post_heading {
   margin: 0px 20px;
+  max-width: 271px;
 }
 
 .post_heading:hover .text_footer {
   color: #c7b299;
 }
 
+.post_heading:hover .footer_read {
+  color: #c7b299;
+}
+
+.post_heading:hover .coloumn_heading_footer {
+  color: #c7b299;
+}
+
 .posts {
   display: block;
-  max-width: 271px;
   margin-top: 25px;
   border-bottom: 1px solid #252525;
   padding-bottom: 25px;
@@ -2024,10 +2041,64 @@ body {
 }
 
 .images_post_heading {
-  max-width: 350px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
 }
 
 .image_post_footer {
   margin: 5px 5px;
+}
+
+.footer_2 {
+  max-width: 100%;
+  min-height: 111px;
+  background-color: #111111;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.txt_footer_2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.text_1_footer {
+  font-size: 13px;
+  font-family: "Myriad Pro";
+  color: #555555;
+  line-height: 1.538;
+  padding: 0 10px 0 10px;
+  border-right: 1px solid #555555;
+}
+
+.text_1_footer span {
+  color: #fff;
+}
+
+.text_1_footer:last-child {
+  border: none;
+}
+
+.txt_2_footer_2 {
+  font-size: 13px;
+  font-family: "Myriad Pro";
+  color: #555555;
+  line-height: 1.538;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.link_footer_2:hover {
+  color: #c7b299;
 }
 /*# sourceMappingURL=style.css.map */
