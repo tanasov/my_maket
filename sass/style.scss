@@ -6,6 +6,11 @@
         margin: 0 auto;
     }
     
+    a:focus,
+    button:focus {
+        outline: none;
+    }
+    
     @mixin text_1 {
         font-size: 14px;
         font-family: "Montserrat";
@@ -129,6 +134,7 @@
         @include text_1;
         color: #fff;
         &:focus {
+            top: 20px;
             border: 1px solid #fff;
             width: 200px;
             transition: width 1s ease-out;
@@ -469,12 +475,10 @@
         margin: 0 0 0 10px;
         &:focus {
             background-color: #998675;
-            outline: none;
             color: #fff;
         }
         &:hover {
             background-color: #998675;
-            outline: none;
             color: #fff;
         }
         &:first-child {
@@ -906,6 +910,9 @@
             background-color: transparent;
             border: 2px solid #d3c1ad;
             transform: scale(1.2);
+        }
+        &:focus {
+            outline: none;
         }
     }
     

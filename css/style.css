@@ -795,6 +795,11 @@ body {
   margin: 0 auto;
 }
 
+a:focus,
+button:focus {
+  outline: none;
+}
+
 .header {
   max-width: 100%;
   min-height: 1025px;
@@ -908,6 +913,7 @@ body {
 }
 
 .search_nav:focus {
+  top: 20px;
   border: 1px solid #fff;
   width: 200px;
   -webkit-transition: width 1s ease-out;
@@ -1334,13 +1340,11 @@ body {
 
 .btn_section_2:focus {
   background-color: #998675;
-  outline: none;
   color: #fff;
 }
 
 .btn_section_2:hover {
   background-color: #998675;
-  outline: none;
   color: #fff;
 }
 
@@ -1839,6 +1843,10 @@ body {
   border: 2px solid #d3c1ad;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+.pagination_item_article_6:focus {
+  outline: none;
 }
 
 .txt_after_article_6 {
