@@ -37,7 +37,7 @@
     @mixin text_section {
         font-size: 16px;
         font-family: "Montserrat";
-        color: rgb(140, 140, 140);
+        color: #555555;
         line-height: 1.75;
     }
     
@@ -46,6 +46,13 @@
         font-family: "Montserrat";
         color: rgb(85, 85, 85);
         line-height: 1.714;
+    }
+    
+    @mixin txt_footer {
+        font-size: 13px;
+        font-family: "Myriad Pro";
+        color: rgb(85, 85, 85);
+        line-height: 1.538;
     }
     
     .header {
@@ -89,18 +96,22 @@
     
     .nav-menu {
         margin: 0 0 0 219px;
+        display: flex;
     }
     
     .nav-menu-list {
-        @include text_1;
-        color: #fff;
         padding: 0 0 0 30px;
-        transition: 0.3s linear;
         &:first-child {
             padding: 0px;
         }
+    }
+    
+    .nav-menu-list_item {
+        @include text_1;
+        color: #fff;
         &:hover {
             color: #c7b299;
+            transition: 0.3s linear;
         }
     }
     
@@ -339,12 +350,12 @@
     }
     
     .heading_section_1 {
-        @include heading_section;
+        @include text_section;
         text-align: center;
     }
     
     .text_heading_section_1 {
-        @include text_heading_section;
+        @include text_section;
         text-align: center;
         max-width: 757px;
         min-height: 43px;
@@ -441,7 +452,7 @@
     .heading_section_2 {
         display: block;
         margin: auto;
-        @include heading_section;
+        @include text_section;
         text-align: center;
         max-width: 766px;
     }
@@ -449,7 +460,7 @@
     .text_heading_section_2 {
         display: block;
         margin: auto;
-        @include text_heading_section;
+        @include text_section;
         max-width: 766px;
         min-height: 60px;
         text-align: center;
@@ -1092,13 +1103,6 @@
         display: flex;
         justify-content: space-around;
         align-items: center;
-    }
-    
-    @mixin txt_footer {
-        font-size: 13px;
-        font-family: "Myriad Pro";
-        color: rgb(85, 85, 85);
-        line-height: 1.538;
     }
     
     .txt_footer_2 {
