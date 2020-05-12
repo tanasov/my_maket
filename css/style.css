@@ -790,6 +790,69 @@ textarea {
   padding: 0.2em 0;
 }
 
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/raleway/raleway-regular.eot) format("eot"), url(../fonts/raleway/raleway-regular.woff2) format("woff2"), url(../fonts/raleway/raleway-regular.woff) format("woff"), url(../fonts/raleway/raleway-regular.ttf) format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/raleway/raleway-bold.eot) format("eot"), url(../fonts/raleway/raleway-bold.woff2) format("woff2"), url(../fonts/raleway/raleway-bold.woff) format("woff"), url(../fonts/raleway/raleway-bold.ttf) format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/raleway/raleway-medium.eot) format("eot"), url(../fonts/raleway/raleway-medium.woff2) format("woff2"), url(../fonts/raleway/raleway-medium.woff) format("woff"), url(../fonts/raleway/raleway-medium.ttf) format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/raleway/raleway-light.eot) format("eot"), url(../fonts/raleway/raleway-light.woff2) format("woff2"), url(../fonts/raleway/raleway-light.woff) format("woff"), url(../fonts/raleway/raleway-light.ttf) format("ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway";
+  src: url(../fonts/raleway/raleway-thin.eot) format("eot"), url(../fonts/raleway/raleway-thin.woff2) format("woff2"), url(../fonts/raleway/raleway-thin.woff) format("woff"), url(../fonts/raleway/raleway-thin.ttf) format("ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/montserrat/montserrat-bold.eot) format("eot"), url(../fonts/montserrat/montserrat-bold.woff2) format("woff2"), url(../fonts/montserrat/montserrat-bold.woff) format("woff"), url(../fonts/montserrat/montserrat-bold.ttf) format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/montserrat/montserrat-light.eot) format("eot"), url(../fonts/montserrat/montserrat-light.woff2) format("woff2"), url(../fonts/montserrat/montserrat-light.woff) format("woff"), url(../fonts/montserrat/montserrat-light.ttf) format("ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/montserrat/montserrat-regular.eot) format("eot"), url(../fonts/montserrat/montserrat-regular.woff2) format("woff2"), url(../fonts/montserrat/montserrat-regular.woff) format("woff"), url(../fonts/montserrat/montserrat-regular.ttf) format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: url(../fonts/montserrat/montserrat-medium.eot) format("eot"), url(../fonts/montserrat/montserrat-medium.woff2) format("woff2"), url(../fonts/montserrat/montserrat-medium.woff) format("woff"), url(../fonts/montserrat/montserrat-medium.ttf) format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
 body {
   max-width: 1920px;
   margin: 0 auto;
@@ -847,6 +910,7 @@ button:focus {
   font-size: 34px;
   font-family: "Raleway";
   line-height: 1.2;
+  font-weight: 400;
 }
 
 .logo_image {
@@ -873,6 +937,7 @@ button:focus {
   font-family: "Montserrat";
   line-height: 1.2;
   text-align: left;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -915,6 +980,7 @@ button:focus {
   font-family: "Montserrat";
   line-height: 1.2;
   text-align: left;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -991,6 +1057,7 @@ button:focus {
   font-family: "Raleway";
   color: #fff;
   line-height: 1.2;
+  font-weight: 400;
   text-align: center;
   max-width: 589px;
 }
@@ -999,7 +1066,7 @@ button:focus {
   font-size: 52px;
   font-family: "Raleway";
   color: #fff;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.2;
   text-align: center;
   max-width: 589px;
@@ -1027,6 +1094,7 @@ button:focus {
   font-family: "Montserrat";
   line-height: 1.2;
   text-align: left;
+  font-weight: 400;
   text-transform: uppercase;
   margin: auto;
   border: none;
@@ -1155,6 +1223,7 @@ button:focus {
   font-size: 14px;
   font-family: "Montserrat";
   line-height: 1.714;
+  font-weight: 400;
   max-width: 266px;
   min-height: 62px;
 }
@@ -1179,6 +1248,7 @@ button:focus {
   font-family: "Montserrat";
   color: #555555;
   line-height: 1.75;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -1187,6 +1257,7 @@ button:focus {
   font-family: "Montserrat";
   color: #555555;
   line-height: 1.75;
+  font-weight: 400;
   text-align: center;
   max-width: 757px;
   min-height: 43px;
@@ -1246,6 +1317,7 @@ button:focus {
   font-family: "Raleway";
   color: #fff;
   line-height: 1.2;
+  font-weight: 400;
 }
 
 .first_text_aside_1 span {
@@ -1257,6 +1329,7 @@ button:focus {
   font-family: "Montserrat";
   color: #615855;
   line-height: 1.2;
+  font-weight: 400;
   position: absolute;
 }
 
@@ -1275,7 +1348,7 @@ button:focus {
   font-size: 14px;
   font-family: "Raleway";
   color: white;
-  font-weight: bold;
+  font-weight: 700;
   text-transform: uppercase;
   line-height: 1.643;
   margin: auto;
@@ -1300,6 +1373,7 @@ button:focus {
   font-family: "Montserrat";
   color: #555555;
   line-height: 1.75;
+  font-weight: 400;
   text-align: center;
   max-width: 766px;
 }
@@ -1311,6 +1385,7 @@ button:focus {
   font-family: "Montserrat";
   color: #555555;
   line-height: 1.75;
+  font-weight: 400;
   max-width: 766px;
   min-height: 60px;
   text-align: center;
@@ -1332,6 +1407,7 @@ button:focus {
   font-family: "Montserrat";
   color: #555555;
   line-height: 1.5;
+  font-weight: 400;
   text-transform: uppercase;
   border: 1px solid #ebebeb;
   border-radius: 5px;
@@ -1420,6 +1496,7 @@ button:focus {
   font-family: "Raleway";
   color: #c7b299;
   line-height: 1.2;
+  font-weight: 400;
 }
 
 .article_txt {
@@ -1430,6 +1507,7 @@ button:focus {
   font-family: "Montserrat";
   color: #d1d1d1;
   line-height: 1.429;
+  font-weight: 400;
 }
 
 .article_btn_link,
@@ -1555,6 +1633,7 @@ button:focus {
   font-family: "Montserrat";
   color: #555555;
   line-height: 1.75;
+  font-weight: 400;
   text-align: center;
   max-width: 552px;
   min-height: 43px;
@@ -1567,6 +1646,7 @@ button:focus {
   font-family: "Montserrat";
   color: #c7b299;
   line-height: 1.714;
+  font-weight: 400;
 }
 
 /* Section_4 */
@@ -1589,7 +1669,7 @@ button:focus {
   font-size: 30px;
   font-family: "Raleway";
   color: #555555;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.2;
 }
 
@@ -1598,6 +1678,7 @@ button:focus {
   font-family: "Montserrat";
   color: #555555;
   line-height: 1.75;
+  font-weight: 400;
   max-width: 657px;
   max-height: 100%;
   text-align: left;
@@ -1690,12 +1771,14 @@ button:focus {
   color: white;
   line-height: 0.75;
   margin-top: 32px;
+  font-weight: 400;
 }
 
 .text_item_section_5 {
   font-size: 14px;
   font-family: "Montserrat";
   color: #c7b299;
+  font-weight: 400;
   text-transform: uppercase;
   line-height: 1.429;
   margin-top: 22px;
@@ -1711,7 +1794,7 @@ button:focus {
   font-size: 30px;
   font-family: "Raleway";
   color: #555555;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.2;
   text-align: center;
 }
@@ -1722,6 +1805,7 @@ button:focus {
   font-family: "Montserrat";
   color: #8c8c8c;
   line-height: 1.75;
+  font-weight: 400;
   text-align: center;
   max-width: 753px;
   margin: auto;
@@ -1807,6 +1891,7 @@ button:focus {
   font-family: "Montserrat";
   color: white;
   line-height: 0.833;
+  font-weight: 400;
   text-align: center;
   background-color: #363636;
   padding: 5px 0 5px 0;
@@ -1817,6 +1902,7 @@ button:focus {
   display: block;
   font-size: 12px;
   font-family: "Roboto";
+  font-weight: 400;
   color: white;
   line-height: 1.667;
   background-color: #252525;
@@ -1859,6 +1945,7 @@ button:focus {
 .text_article_section_6 {
   font-size: 20px;
   font-family: "Raleway";
+  font-weight: 400;
   color: #555555;
   line-height: 1.2;
 }
@@ -1866,6 +1953,7 @@ button:focus {
 .text_2_article_section_6 {
   font-size: 14px;
   font-family: "Montserrat";
+  font-weight: 400;
   color: #8c8c8c;
   line-height: 1.571;
   text-align: left;
@@ -1881,6 +1969,7 @@ button:focus {
   color: #c7b299;
   line-height: 1.429;
   padding-top: 10px;
+  font-weight: 400;
 }
 
 .btn_article_section_6:after {
@@ -1962,6 +2051,7 @@ button:focus {
   color: #555555;
   line-height: 1.714;
   width: 258px;
+  font-weight: 400;
 }
 
 .footer_read {
@@ -1969,6 +2059,7 @@ button:focus {
   font-family: "Montserrat";
   color: #555555;
   line-height: 1.714;
+  font-weight: 400;
   color: #fff;
 }
 
@@ -2028,7 +2119,7 @@ button:focus {
   font-size: 24px;
   font-family: "Raleway";
   color: white;
-  font-weight: bold;
+  font-weight: 700;
   line-height: 1.2;
 }
 
@@ -2037,6 +2128,7 @@ button:focus {
   font-family: "Montserrat";
   color: #363636;
   line-height: 1.667;
+  font-weight: 400;
 }
 
 .text_coloumn_footer {
@@ -2044,6 +2136,7 @@ button:focus {
   font-family: "Montserrat";
   color: #555555;
   line-height: 1.714;
+  font-weight: 400;
 }
 
 .text_coloumn_footer span {
@@ -2086,6 +2179,7 @@ button:focus {
   font-family: "Myriad Pro";
   color: #555555;
   line-height: 1.538;
+  font-weight: 400;
   padding: 0 10px 0 10px;
   border-right: 1px solid #555555;
 }
@@ -2103,6 +2197,7 @@ button:focus {
   font-family: "Myriad Pro";
   color: #555555;
   line-height: 1.538;
+  font-weight: 400;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
