@@ -1,5 +1,6 @@
     @import "normalize";
     @import "reset";
+    @import "fonts";
     $width: 1920px;
     body {
         max-width: $width;
@@ -16,13 +17,14 @@
         font-family: "Montserrat";
         line-height: 1.2;
         text-align: left;
+        font-weight: 400;
     }
     
     @mixin heading_section {
         font-size: 30px;
         font-family: "Raleway";
         color: #555555;
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.2;
         max-width: 757px;
     }
@@ -32,6 +34,7 @@
         font-family: "Montserrat";
         color: #555555;
         line-height: 1.75;
+        font-weight: 400;
     }
     
     @mixin text_section {
@@ -39,6 +42,7 @@
         font-family: "Montserrat";
         color: #555555;
         line-height: 1.75;
+        font-weight: 400;
     }
     
     @mixin text_footer {
@@ -46,6 +50,7 @@
         font-family: "Montserrat";
         color: rgb(85, 85, 85);
         line-height: 1.714;
+        font-weight: 400;
     }
     
     @mixin txt_footer {
@@ -53,6 +58,7 @@
         font-family: "Myriad Pro";
         color: rgb(85, 85, 85);
         line-height: 1.538;
+        font-weight: 400;
     }
     
     .header {
@@ -88,6 +94,7 @@
         font-size: 34px;
         font-family: "Raleway";
         line-height: 1.2;
+        font-weight: 400;
     }
     
     .logo_image {
@@ -205,6 +212,7 @@
         font-family: "Raleway";
         color: #fff;
         line-height: 1.2;
+        font-weight: 400;
         text-align: center;
         max-width: 589px;
     }
@@ -213,7 +221,7 @@
         font-size: 52px;
         font-family: "Raleway";
         color: #fff;
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.2;
         text-align: center;
         max-width: 589px;
@@ -333,6 +341,7 @@
         font-size: 14px;
         font-family: "Montserrat";
         line-height: 1.714;
+        font-weight: 400;
         max-width: 266px;
         min-height: 62px;
     }
@@ -408,6 +417,7 @@
         font-family: "Raleway";
         color: #fff;
         line-height: 1.2;
+        font-weight: 400;
         span {
             color: rgb(199, 178, 153);
         }
@@ -418,6 +428,7 @@
         font-family: "Montserrat";
         color: rgb(97, 88, 85);
         line-height: 1.2;
+        font-weight: 400;
         position: absolute;
     }
     
@@ -432,7 +443,7 @@
             font-size: 14px;
             font-family: "Raleway";
             color: rgb(255, 255, 255);
-            font-weight: bold;
+            font-weight: 700;
             text-transform: uppercase;
             line-height: 1.643;
             margin: auto;
@@ -478,6 +489,7 @@
         font-family: "Montserrat";
         color: #555555;
         line-height: 1.5;
+        font-weight: 400;
         text-transform: uppercase;
         border: 1px solid #ebebeb;
         border-radius: 5px;
@@ -553,6 +565,7 @@
         font-family: "Raleway";
         color: rgb(199, 178, 153);
         line-height: 1.2;
+        font-weight: 400;
     }
     
     .article_txt {
@@ -563,6 +576,7 @@
         font-family: "Montserrat";
         color: rgb(209, 209, 209);
         line-height: 1.429;
+        font-weight: 400;
     }
     
     .article_btn_link,
@@ -687,6 +701,7 @@
         font-family: "Montserrat";
         color: rgb(199, 178, 153);
         line-height: 1.714;
+        font-weight: 400;
     }
     /* Section_4 */
     
@@ -705,7 +720,7 @@
         font-size: 30px;
         font-family: "Raleway";
         color: rgb(85, 85, 85);
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.2;
     }
     
@@ -791,12 +806,14 @@
         color: rgb(255, 255, 255);
         line-height: 0.75;
         margin-top: 32px;
+        font-weight: 400;
     }
     
     .text_item_section_5 {
         font-size: 14px;
         font-family: "Montserrat";
         color: rgb(199, 178, 153);
+        font-weight: 400;
         text-transform: uppercase;
         line-height: 1.429;
         margin-top: 22px;
@@ -812,7 +829,7 @@
         font-size: 30px;
         font-family: "Raleway";
         color: rgb(85, 85, 85);
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.2;
         text-align: center;
     }
@@ -823,6 +840,7 @@
         font-family: "Montserrat";
         color: rgb(140, 140, 140);
         line-height: 1.75;
+        font-weight: 400;
         text-align: center;
         max-width: 753px;
         margin: auto;
@@ -887,6 +905,7 @@
         font-family: "Montserrat";
         color: rgb(255, 255, 255);
         line-height: 0.833;
+        font-weight: 400;
         text-align: center;
         background-color: #363636;
         padding: 5px 0 5px 0;
@@ -897,6 +916,7 @@
         display: block;
         font-size: 12px;
         font-family: "Roboto";
+        font-weight: 400;
         color: rgb(255, 255, 255);
         line-height: 1.667;
         background-color: #252525;
@@ -935,6 +955,7 @@
     .text_article_section_6 {
         font-size: 20px;
         font-family: "Raleway";
+        font-weight: 400;
         color: rgb(85, 85, 85);
         line-height: 1.2;
     }
@@ -942,6 +963,7 @@
     .text_2_article_section_6 {
         font-size: 14px;
         font-family: "Montserrat";
+        font-weight: 400;
         color: rgb(140, 140, 140);
         line-height: 1.571;
         text-align: left;
@@ -955,6 +977,7 @@
         color: rgb(199, 178, 153);
         line-height: 1.429;
         padding-top: 10px;
+        font-weight: 400;
         &:after {
             content: "\002023";
             position: relative;
@@ -1017,6 +1040,7 @@
         color: rgb(85, 85, 85);
         line-height: 1.714;
         width: 258px;
+        font-weight: 400;
     }
     
     .footer_read {
@@ -1069,7 +1093,7 @@
         font-size: 24px;
         font-family: "Raleway";
         color: rgb(255, 255, 255);
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.2;
     }
     
@@ -1078,6 +1102,7 @@
         font-family: "Montserrat";
         color: rgb(54, 54, 54);
         line-height: 1.667;
+        font-weight: 400;
     }
     
     .text_coloumn_footer {
