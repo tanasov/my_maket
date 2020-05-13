@@ -790,6 +790,7 @@ textarea {
   padding: 0.2em 0;
 }
 
+/* Fonts Raleway */
 @font-face {
   font-family: "Raleway";
   src: url(../fonts/raleway/raleway-regular.eot) format("eot"), url(../fonts/raleway/raleway-regular.woff2) format("woff2"), url(../fonts/raleway/raleway-regular.woff) format("woff"), url(../fonts/raleway/raleway-regular.ttf) format("ttf");
@@ -825,6 +826,7 @@ textarea {
   font-style: normal;
 }
 
+/* Fonts Monserrat */
 @font-face {
   font-family: "Montserrat";
   src: url(../fonts/montserrat/montserrat-bold.eot) format("eot"), url(../fonts/montserrat/montserrat-bold.woff2) format("woff2"), url(../fonts/montserrat/montserrat-bold.woff) format("woff"), url(../fonts/montserrat/montserrat-bold.ttf) format("ttf");
@@ -853,6 +855,49 @@ textarea {
   font-style: normal;
 }
 
+/* Fonts Roboto */
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/roboto/roboto-bold.eot) format("eot"), url(../fonts/roboto/roboto-bold.woff2) format("woff2"), url(../fonts/roboto/roboto-bold.woff) format("woff"), url(../fonts/roboto/roboto-bold.ttf) format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/roboto/roboto-bold.eot) format("eot"), url(../fonts/roboto/roboto-bold..woff2) format("woff2"), url(../fonts/roboto/roboto-bold.woff) format("woff"), url(../fonts/roboto/roboto-bold..ttf) format("ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/roboto/roboto-light.eot) format("eot"), url(../fonts/roboto/roboto-light.woff2) format("woff2"), url(../fonts/roboto/roboto-light.woff) format("woff"), url(../fonts/roboto/roboto-light.ttf) format("ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/roboto/roboto-light.eot) format("eot"), url(../fonts/roboto/roboto-light.woff2) format("woff2"), url(../fonts/roboto/roboto-light.woff) format("woff"), url(../fonts/roboto/roboto-light.ttf) format("ttf");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/roboto/roboto-medium.eot) format("eot"), url(../fonts/roboto/roboto-medium.woff2) format("woff2"), url(../fonts/roboto/roboto-medium.woff) format("woff"), url(../fonts/roboto/roboto-medium.ttf) format("ttf");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(../fonts/roboto/roboto-regular.eot) format("eot"), url(../fonts/roboto/roboto-regular.woff2) format("woff2"), url(../fonts/roboto/roboto-regular.woff) format("woff"), url(../fonts/roboto/roboto-regular.ttf) format("ttf");
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
   max-width: 1920px;
   margin: 0 auto;
@@ -877,9 +922,8 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -918,14 +962,13 @@ button:focus {
 }
 
 .nav-menu {
-  margin: 0 0 0 219px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 .nav-menu-list {
-  padding: 0 0 0 30px;
+  margin: 0 0 0 30px;
 }
 
 .nav-menu-list:first-child {
@@ -947,6 +990,15 @@ button:focus {
   transition: 0.3s linear;
 }
 
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .cart {
   display: block;
   width: 30px;
@@ -957,7 +1009,7 @@ button:focus {
 }
 
 .nav_action {
-  padding: 0 0 0 60px;
+  margin: 0 0 0 60px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -965,12 +1017,12 @@ button:focus {
 
 .nav_search {
   padding: 0 0 0 28px;
+  position: relative;
 }
 
 .search_nav {
   width: 30px;
   height: 30px;
-  outline: none;
   border: none;
   background-image: url(../img/icon-search.svg);
   background-size: contain;
@@ -982,10 +1034,13 @@ button:focus {
   text-align: left;
   font-weight: 400;
   color: #fff;
+  position: absolute;
 }
 
 .search_nav:focus {
-  top: 20px;
+  background-image: none;
+  top: 40px;
+  left: -210px;
   border: 1px solid #fff;
   width: 200px;
   -webkit-transition: width 1s ease-out;
@@ -1217,13 +1272,16 @@ button:focus {
   font-family: "Raleway";
   font-weight: bold;
   line-height: 1.2;
+  color: #555555;
 }
 
 .text_heading_service {
   font-size: 14px;
   font-family: "Montserrat";
-  line-height: 1.714;
+  line-height: 1.2;
+  text-align: left;
   font-weight: 400;
+  color: #555555;
   max-width: 266px;
   min-height: 62px;
 }
@@ -1621,8 +1679,11 @@ button:focus {
 .heading_section_3 {
   font-size: 30px;
   font-family: "Raleway";
-  color: #fff;
+  color: #555555;
+  font-weight: 700;
   line-height: 1.2;
+  max-width: 757px;
+  color: #fff;
   max-width: 552px;
   margin: auto;
   margin-top: 44px;
@@ -1644,9 +1705,10 @@ button:focus {
 .time_section_3 {
   font-size: 14px;
   font-family: "Montserrat";
-  color: #c7b299;
+  color: #555555;
   line-height: 1.714;
   font-weight: 400;
+  color: #c7b299;
 }
 
 /* Section_4 */
@@ -2176,7 +2238,7 @@ button:focus {
 
 .text_1_footer {
   font-size: 13px;
-  font-family: "Myriad Pro";
+  font-family: "Montserrat";
   color: #555555;
   line-height: 1.538;
   font-weight: 400;
@@ -2194,7 +2256,7 @@ button:focus {
 
 .txt_2_footer_2 {
   font-size: 13px;
-  font-family: "Myriad Pro";
+  font-family: "Montserrat";
   color: #555555;
   line-height: 1.538;
   font-weight: 400;
