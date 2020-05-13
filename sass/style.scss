@@ -29,14 +29,6 @@
         max-width: 757px;
     }
     
-    @mixin text_heading_section {
-        font-size: 16px;
-        font-family: "Montserrat";
-        color: #555555;
-        line-height: 1.75;
-        font-weight: 400;
-    }
-    
     @mixin text_section {
         font-size: 16px;
         font-family: "Montserrat";
@@ -55,7 +47,7 @@
     
     @mixin txt_footer {
         font-size: 13px;
-        font-family: "Myriad Pro";
+        font-family: "Montserrat";
         color: rgb(85, 85, 85);
         line-height: 1.538;
         font-weight: 400;
@@ -73,7 +65,7 @@
     
     .nav {
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         padding: 60px 0 0 0;
     }
@@ -102,12 +94,11 @@
     }
     
     .nav-menu {
-        margin: 0 0 0 219px;
         display: flex;
     }
     
     .nav-menu-list {
-        padding: 0 0 0 30px;
+        margin: 0 0 0 30px;
         &:first-child {
             padding: 0px;
         }
@@ -122,6 +113,11 @@
         }
     }
     
+    .menu {
+        display: flex;
+        align-items: center;
+    }
+    
     .cart {
         display: block;
         width: 30px;
@@ -132,18 +128,18 @@
     }
     
     .nav_action {
-        padding: 0 0 0 60px;
+        margin: 0 0 0 60px;
         display: flex;
     }
     
     .nav_search {
         padding: 0 0 0 28px;
+        position: relative;
     }
     
     .search_nav {
         width: 30px;
         height: 30px;
-        outline: none;
         border: none;
         background-image: url(../img/icon-search.svg);
         background-size: contain;
@@ -151,8 +147,11 @@
         background-color: transparent;
         @include text_1;
         color: #fff;
+        position: absolute;
         &:focus {
-            top: 20px;
+            background-image: none;
+            top: 40px;
+            left: -210px;
             border: 1px solid #fff;
             width: 200px;
             transition: width 1s ease-out;
@@ -335,13 +334,12 @@
         font-family: "Raleway";
         font-weight: bold;
         line-height: 1.2;
+        color: #555555;
     }
     
     .text_heading_service {
-        font-size: 14px;
-        font-family: "Montserrat";
-        line-height: 1.714;
-        font-weight: 400;
+        @include text_1;
+        color: #555555;
         max-width: 266px;
         min-height: 62px;
     }
@@ -678,10 +676,8 @@
     }
     
     .heading_section_3 {
-        font-size: 30px;
-        font-family: "Raleway";
+        @include heading_section;
         color: #fff;
-        line-height: 1.2;
         max-width: 552px;
         margin: auto;
         margin-top: 44px;
@@ -697,11 +693,8 @@
     }
     
     .time_section_3 {
-        font-size: 14px;
-        font-family: "Montserrat";
+        @include text_footer;
         color: rgb(199, 178, 153);
-        line-height: 1.714;
-        font-weight: 400;
     }
     /* Section_4 */
     
