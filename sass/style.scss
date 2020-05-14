@@ -394,6 +394,8 @@
         font-weight: bold;
         line-height: 1.2;
         color: #555555;
+        text-align: center;
+        margin-top: 10px;
     }
     
     .text_heading_service {
@@ -401,6 +403,8 @@
         color: #555555;
         max-width: 266px;
         min-height: 62px;
+        text-align: center;
+        margin-top: 10px;
     }
     
     .image_service {
@@ -527,11 +531,11 @@
     
     .text_heading_section_2 {
         display: block;
-        margin: auto;
         @include text_section;
         max-width: 766px;
         min-height: 60px;
         text-align: center;
+        margin: auto;
     }
     
     .buttons_section_2 {

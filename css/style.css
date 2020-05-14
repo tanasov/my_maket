@@ -1349,6 +1349,8 @@ button:focus {
   font-weight: bold;
   line-height: 1.2;
   color: #555555;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .text_heading_service {
@@ -1360,6 +1362,8 @@ button:focus {
   color: #555555;
   max-width: 266px;
   min-height: 62px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .image_service {
@@ -1514,7 +1518,6 @@ button:focus {
 
 .text_heading_section_2 {
   display: block;
-  margin: auto;
   font-size: 16px;
   font-family: "Montserrat";
   color: #555555;
@@ -1523,6 +1526,7 @@ button:focus {
   max-width: 766px;
   min-height: 60px;
   text-align: center;
+  margin: auto;
 }
 
 .buttons_section_2 {
