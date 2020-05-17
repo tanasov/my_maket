@@ -909,6 +909,13 @@ button:focus {
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   max-width: 100%;
   min-height: 1025px;
   background-image: url(../img/header_image.jpg);
@@ -942,12 +949,12 @@ button:focus {
           align-items: center;
   color: #fff;
   width: 181px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 .logo:hover {
   color: #c7b299;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
 }
 
 .logo_text {
@@ -955,6 +962,13 @@ button:focus {
   font-family: "Raleway";
   line-height: 1.2;
   font-weight: 400;
+  color: #fff;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
+}
+
+.logo_text:hover {
+  color: #c7b299;
 }
 
 .logo_image {
@@ -973,6 +987,8 @@ button:focus {
 @media (max-width: 1135px) {
   .menu_list_item {
     position: relative;
+    -webkit-transition: 0.5s linear;
+    transition: 0.5s linear;
   }
   .menu_list_item:hover .nav-menu,
   .menu_list_item .nav-menu:hover {
@@ -989,6 +1005,8 @@ button:focus {
 
 .icon_menu {
   fill: #fff;
+  -webkit-transition: 0.5s linear;
+  transition: 0.5s linear;
 }
 
 @media (max-width: 1135px) {
@@ -1048,15 +1066,14 @@ button:focus {
   font-size: 14px;
   font-family: "Montserrat";
   line-height: 1.2;
-  text-align: left;
   font-weight: 400;
   color: #fff;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 .nav-menu-list_item:hover {
   color: #c7b299;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
 }
 
 @media (max-width: 1135px) {
@@ -1095,6 +1112,11 @@ button:focus {
 }
 
 .search_nav {
+  font-size: 16px;
+  font-family: "Montserrat";
+  line-height: 1.5;
+  font-weight: 400;
+  color: #fff;
   width: 30px;
   height: 30px;
   border: none;
@@ -1102,12 +1124,6 @@ button:focus {
   background-size: contain;
   background-repeat: no-repeat;
   background-color: transparent;
-  font-size: 14px;
-  font-family: "Montserrat";
-  line-height: 1.2;
-  text-align: left;
-  font-weight: 400;
-  color: #fff;
   position: absolute;
 }
 
@@ -1132,7 +1148,7 @@ button:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 309px 150px 0 150px;
+  margin: 309px 150px 0 150px;
 }
 
 .slider_arrow_left {
@@ -1184,9 +1200,9 @@ button:focus {
 .title_text_unique {
   font-size: 36px;
   font-family: "Raleway";
-  color: #fff;
   line-height: 1.2;
   font-weight: 400;
+  color: #fff;
   text-align: center;
   max-width: 589px;
 }
@@ -1194,9 +1210,9 @@ button:focus {
 .title_text_portfolio {
   font-size: 52px;
   font-family: "Raleway";
-  color: #fff;
-  font-weight: 700;
   line-height: 1.2;
+  font-weight: 700;
+  color: #fff;
   text-align: center;
   max-width: 589px;
 }
@@ -1204,8 +1220,9 @@ button:focus {
 .title_text_text {
   font-size: 16px;
   font-family: "Montserrat";
-  color: #fff;
   line-height: 1.5;
+  font-weight: 400;
+  color: #fff;
   text-align: center;
   max-width: 562px;
 }
@@ -1215,15 +1232,9 @@ button:focus {
   display: -ms-flexbox;
   display: flex;
   text-align: center;
-  color: #fff;
   width: 170px;
   min-height: 53px;
   padding: 5px 20px;
-  font-size: 14px;
-  font-family: "Montserrat";
-  line-height: 1.2;
-  text-align: left;
-  font-weight: 400;
   text-transform: uppercase;
   margin: auto;
   border: none;
@@ -1237,7 +1248,18 @@ button:focus {
   background-color: #c7b299;
 }
 
+.get_btn:active {
+  -webkit-box-shadow: 0 0 10px #998675;
+          box-shadow: 0 0 10px #998675;
+}
+
 .text_btn {
+  font-size: 14px;
+  font-family: "Raleway";
+  line-height: 1.643;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
   margin: auto;
 }
 
@@ -1276,20 +1298,27 @@ button:focus {
   transition: 0.4s linear;
 }
 
+@media (max-width: 1135px) {
+  .pagination_item {
+    visibility: hidden;
+  }
+}
+
 /* Section_1 */
 .section_1 {
   max-width: 100%;
-  min-height: 100%;
 }
 
 .services {
-  padding-top: 90px;
+  margin-top: 90px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .web,
@@ -1297,11 +1326,13 @@ button:focus {
 .custom,
 .marketing {
   text-align: center;
-  max-width: 266px;
+  width: 266px;
   -ms-flex-item-align: end;
       align-self: flex-end;
   color: #555555;
-  padding: 0 0 0 30px;
+  margin: 0 0 60px 30px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 .web:hover,
@@ -1309,8 +1340,13 @@ button:focus {
 .custom:hover,
 .marketing:hover {
   color: #c7b299;
-  -webkit-transition: 0.3s linear;
-  transition: 0.3s linear;
+}
+
+.web:hover .heading_service,
+.devolopment:hover .heading_service,
+.custom:hover .heading_service,
+.marketing:hover .heading_service {
+  color: #c7b299;
 }
 
 .web:after,
@@ -1327,6 +1363,8 @@ button:focus {
   margin: 0 auto;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 .web:hover:after,
@@ -1336,30 +1374,28 @@ button:focus {
   background-color: #c7b299;
 }
 
-.web:first-child,
-.devolopment:first-child,
-.custom:first-child,
-.marketing:first-child {
-  padding: 0;
-}
-
 .heading_service {
   font-size: 22px;
   font-family: "Raleway";
-  font-weight: bold;
   line-height: 1.2;
+  font-weight: 700;
   color: #555555;
+  text-align: center;
+  margin-top: 10px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 .text_heading_service {
   font-size: 14px;
   font-family: "Montserrat";
-  line-height: 1.2;
-  text-align: left;
+  line-height: 1.714;
   font-weight: 400;
   color: #555555;
   max-width: 266px;
   min-height: 62px;
+  text-align: center;
+  margin-top: 10px;
 }
 
 .image_service {
@@ -1378,20 +1414,20 @@ button:focus {
 }
 
 .heading_section_1 {
-  font-size: 16px;
-  font-family: "Montserrat";
+  font-size: 30px;
+  font-family: "Raleway";
+  line-height: 1.2;
+  font-weight: 700;
   color: #555555;
-  line-height: 1.75;
-  font-weight: 400;
   text-align: center;
 }
 
 .text_heading_section_1 {
   font-size: 16px;
   font-family: "Montserrat";
-  color: #555555;
   line-height: 1.75;
   font-weight: 400;
+  color: #8c8c8c;
   text-align: center;
   max-width: 757px;
   min-height: 43px;
@@ -1418,6 +1454,12 @@ button:focus {
   left: 70px;
 }
 
+@media (max-width: 1135px) {
+  .image_section-1 {
+    position: static;
+  }
+}
+
 .image_section-2 {
   z-index: 2;
 }
@@ -1427,6 +1469,12 @@ button:focus {
   z-index: 1;
   top: 30px;
   right: 70px;
+}
+
+@media (max-width: 1135px) {
+  .image_section-3 {
+    position: static;
+  }
 }
 
 /* Aside_1 */
@@ -1449,9 +1497,9 @@ button:focus {
 .first_text_aside_1 {
   font-size: 28px;
   font-family: "Raleway";
-  color: #fff;
   line-height: 1.2;
   font-weight: 400;
+  color: #fff;
 }
 
 .first_text_aside_1 span {
@@ -1461,9 +1509,9 @@ button:focus {
 .second_text_aside_1 {
   font-size: 18px;
   font-family: "Montserrat";
-  color: #615855;
   line-height: 1.2;
   font-weight: 400;
+  color: #615855;
   position: absolute;
 }
 
@@ -1480,16 +1528,20 @@ button:focus {
 
 .btn_aside_1 span {
   font-size: 14px;
-  font-family: "Raleway";
-  color: white;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-family: "Montserrat";
   line-height: 1.643;
+  font-weight: 700;
+  color: #fff;
   margin: auto;
 }
 
 .btn_aside_1:hover {
-  background-color: #000000;
+  background-color: #a78a72;
+}
+
+.btn_aside_1:active {
+  -webkit-box-shadow: 0 0 10px #998675;
+          box-shadow: 0 0 10px #998675;
 }
 
 /* Section_2 */
@@ -1501,28 +1553,35 @@ button:focus {
 }
 
 .heading_section_2 {
-  display: block;
-  margin: auto;
-  font-size: 16px;
-  font-family: "Montserrat";
+  font-size: 30px;
+  font-family: "Raleway";
+  line-height: 1.2;
+  font-weight: 700;
   color: #555555;
-  line-height: 1.75;
-  font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
-  max-width: 766px;
+  margin-top: 81px;
 }
 
 .text_heading_section_2 {
-  display: block;
-  margin: auto;
   font-size: 16px;
   font-family: "Montserrat";
-  color: #555555;
   line-height: 1.75;
   font-weight: 400;
+  color: #8c8c8c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   max-width: 766px;
   min-height: 60px;
+  justify-self: center;
   text-align: center;
+  margin-top: 24px;
 }
 
 .buttons_section_2 {
@@ -1536,32 +1595,31 @@ button:focus {
 }
 
 .btn_section_2 {
-  padding: 10px 20px;
   font-size: 14px;
   font-family: "Montserrat";
-  color: #555555;
   line-height: 1.5;
   font-weight: 400;
+  color: #8c8c8c;
+  padding: 10px 20px;
   text-transform: uppercase;
   border: 1px solid #ebebeb;
   border-radius: 5px;
-  outline: none;
   background-color: #fff;
   margin: 0 0 0 10px;
+  -webkit-transition: 0.3s linear;
+  transition: 0.3s linear;
 }
 
 .btn_section_2:focus {
   background-color: #998675;
   color: #fff;
+  -webkit-box-shadow: 0 0 10px #998675;
+          box-shadow: 0 0 10px #998675;
 }
 
 .btn_section_2:hover {
   background-color: #998675;
   color: #fff;
-}
-
-.btn_section_2:first-child {
-  margin: 0;
 }
 
 .images_articles {
@@ -1603,6 +1661,8 @@ button:focus {
 
 .image_article:hover .article_text {
   background-color: #362f2d;
+  -webkit-transition: 0.7s linear;
+  transition: 0.7s linear;
 }
 
 .image_article:hover .article_text:before {
@@ -1612,6 +1672,8 @@ button:focus {
 .article_photo {
   display: block;
   width: 100%;
+  -webkit-transition: 0.7s linear;
+  transition: 0.7s linear;
 }
 
 .article_text {
@@ -1630,25 +1692,27 @@ button:focus {
 }
 
 .article_text_title {
+  font-size: 20px;
+  font-family: "Raleway";
+  line-height: 1.2;
+  font-weight: 400;
+  color: #c7b299;
   display: block;
   text-align: center;
   padding: 10px 10px 0 10px;
-  font-size: 20px;
-  font-family: "Raleway";
-  color: #c7b299;
-  line-height: 1.2;
-  font-weight: 400;
 }
 
 .article_txt {
+  font-size: 14px;
+  font-family: "Montserrat";
+  line-height: 1.429;
+  font-weight: 400;
+  color: #d1d1d1;
   display: block;
   text-align: center;
   padding: 5px;
-  font-size: 14px;
-  font-family: "Montserrat";
-  color: #d1d1d1;
-  line-height: 1.429;
-  font-weight: 400;
+  -webkit-transition: 0.7s linear;
+  transition: 0.7s linear;
 }
 
 .article_btn_link,
@@ -1663,6 +1727,8 @@ button:focus {
   background-color: transparent;
   position: absolute;
   top: 35%;
+  -webkit-transition: 0.7s linear;
+  transition: 0.7s linear;
 }
 
 .article_btn_link {
@@ -1673,6 +1739,8 @@ button:focus {
 
 .btn_link {
   fill: #fff;
+  -webkit-transition: 0.7s linear;
+  transition: 0.7s linear;
 }
 
 .btn_link:hover {
@@ -1762,10 +1830,8 @@ button:focus {
 .heading_section_3 {
   font-size: 30px;
   font-family: "Raleway";
-  color: #555555;
-  font-weight: 700;
   line-height: 1.2;
-  max-width: 757px;
+  font-weight: 400;
   color: #fff;
   max-width: 552px;
   margin: auto;
@@ -1775,9 +1841,9 @@ button:focus {
 .text_section_3 {
   font-size: 16px;
   font-family: "Montserrat";
-  color: #555555;
   line-height: 1.75;
   font-weight: 400;
+  color: #fff;
   text-align: center;
   max-width: 552px;
   min-height: 43px;
@@ -1788,7 +1854,6 @@ button:focus {
 .time_section_3 {
   font-size: 14px;
   font-family: "Montserrat";
-  color: #555555;
   line-height: 1.714;
   font-weight: 400;
   color: #c7b299;
@@ -1813,17 +1878,17 @@ button:focus {
 .heading_section_4 {
   font-size: 30px;
   font-family: "Raleway";
-  color: #555555;
-  font-weight: 700;
   line-height: 1.2;
+  font-weight: 700;
+  color: #555555;
 }
 
 .text_section_4 {
   font-size: 16px;
   font-family: "Montserrat";
-  color: #555555;
   line-height: 1.75;
   font-weight: 400;
+  color: #8c8c8c;
   max-width: 657px;
   max-height: 100%;
   text-align: left;
@@ -1838,8 +1903,9 @@ button:focus {
 .list_item_section_4 {
   font-size: 16px;
   font-family: "Montserrat";
-  color: #8c8c8c;
   line-height: 2;
+  font-weight: 400;
+  color: #8c8c8c;
 }
 
 .list_section_4 > .list_item_section_4 {
@@ -1867,8 +1933,9 @@ button:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1876,15 +1943,13 @@ button:focus {
   -webkit-box-direction: normal;
       -ms-flex-flow: row wrap;
           flex-flow: row wrap;
-  background: -webkit-linear-gradient(top right #211b19, #4e3427);
+  background: -webkit-linear-gradient(top right, #211b19, #4e3427);
   background: -webkit-radial-gradient(top left, #211b19, #4e3427);
 }
 
 .fig_item_section_5 {
-  width: 152px;
-  height: 171px;
   text-align: center;
-  margin: 0 35px;
+  margin: 20px 50px;
 }
 
 .fig_item_section_5:after {
@@ -1900,10 +1965,6 @@ button:focus {
       align-self: flex-end;
 }
 
-.fig_item_section_5:first-child, .fig_item_section_5:last-child {
-  margin: 0;
-}
-
 .txt_item_section_5 {
   display: -ms-grid;
   display: grid;
@@ -1913,20 +1974,23 @@ button:focus {
 .numbers_item_section_5 {
   font-size: 48px;
   font-family: "Montserrat";
-  color: white;
   line-height: 0.75;
-  margin-top: 32px;
   font-weight: 400;
+  color: white;
+  margin-top: 32px;
 }
 
 .text_item_section_5 {
   font-size: 14px;
   font-family: "Montserrat";
-  color: #c7b299;
-  font-weight: 400;
-  text-transform: uppercase;
   line-height: 1.429;
+  font-weight: 400;
+  color: #c7b299;
   margin-top: 22px;
+}
+
+.image_section_5 {
+  fill: #c7b299;
 }
 
 /* Section 6 */
@@ -1938,19 +2002,19 @@ button:focus {
 .heading_section_6 {
   font-size: 30px;
   font-family: "Raleway";
-  color: #555555;
-  font-weight: 700;
   line-height: 1.2;
+  font-weight: 700;
+  color: #555555;
   text-align: center;
 }
 
 .text_section_6 {
-  padding-top: 30px;
   font-size: 16px;
   font-family: "Montserrat";
-  color: #8c8c8c;
   line-height: 1.75;
   font-weight: 400;
+  color: #8c8c8c;
+  padding-top: 30px;
   text-align: center;
   max-width: 753px;
   margin: auto;
@@ -1977,7 +2041,7 @@ button:focus {
   max-width: 370px;
   min-height: 270px;
   position: relative;
-  margin: 0 20px;
+  margin: 20px 20px;
   border: 1px solid #f8f8f8;
 }
 
@@ -2031,12 +2095,12 @@ button:focus {
 }
 
 .txt_article_image_article {
-  display: block;
   font-size: 24px;
   font-family: "Montserrat";
-  color: white;
   line-height: 0.833;
   font-weight: 400;
+  color: #fff;
+  display: block;
   text-align: center;
   background-color: #363636;
   padding: 5px 0 5px 0;
@@ -2044,12 +2108,12 @@ button:focus {
 }
 
 .txt_2_article_image_article {
-  display: block;
   font-size: 12px;
-  font-family: "Roboto";
-  font-weight: 400;
-  color: white;
+  font-family: "Montserrat";
   line-height: 1.667;
+  font-weight: 400;
+  color: #fff;
+  display: block;
   background-color: #252525;
   padding: 5px 0 5px 0;
   border-radius: 0 0 5px 5px;
@@ -2090,31 +2154,30 @@ button:focus {
 .text_article_section_6 {
   font-size: 20px;
   font-family: "Raleway";
+  line-height: 1.2;
   font-weight: 400;
   color: #555555;
-  line-height: 1.2;
 }
 
 .text_2_article_section_6 {
   font-size: 14px;
   font-family: "Montserrat";
+  line-height: 1.571;
   font-weight: 400;
   color: #8c8c8c;
-  line-height: 1.571;
   text-align: left;
   padding-top: 10px;
 }
 
 .btn_article_section_6 {
+  font-size: 14px;
+  font-family: "Montserrat";
+  line-height: 1.429;
+  font-weight: 400;
+  color: #c7b299;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 14px;
-  font-family: "Montserrat";
-  color: #c7b299;
-  line-height: 1.429;
-  padding-top: 10px;
-  font-weight: 400;
 }
 
 .btn_article_section_6:after {
@@ -2178,7 +2241,7 @@ button:focus {
 }
 
 .logo_section_7 {
-  margin: 0 60px;
+  margin: 20px 60px;
 }
 
 .logo_section_7:hover {
@@ -2211,19 +2274,18 @@ button:focus {
 .text_footer {
   font-size: 14px;
   font-family: "Montserrat";
-  color: #555555;
   line-height: 1.714;
-  width: 258px;
   font-weight: 400;
+  color: #555555;
+  width: 258px;
 }
 
 .footer_read {
   font-size: 14px;
   font-family: "Montserrat";
-  color: #555555;
-  line-height: 1.714;
+  line-height: 1.429;
   font-weight: 400;
-  color: #fff;
+  color: #d1d1d1;
 }
 
 .post_heading {
@@ -2281,25 +2343,25 @@ button:focus {
 .heading_footer_coloumn {
   font-size: 24px;
   font-family: "Raleway";
-  color: white;
-  font-weight: 700;
   line-height: 1.2;
+  font-weight: 700;
+  color: white;
 }
 
 .txt_coloumn_footer {
   font-size: 12px;
   font-family: "Montserrat";
-  color: #363636;
   line-height: 1.667;
   font-weight: 400;
+  color: #363636;
 }
 
 .text_coloumn_footer {
   font-size: 14px;
   font-family: "Montserrat";
-  color: #555555;
-  line-height: 1.714;
+  line-height: 1.429;
   font-weight: 400;
+  color: #555555;
 }
 
 .text_coloumn_footer span {
@@ -2315,6 +2377,11 @@ button:focus {
 
 .image_post_footer {
   margin: 5px 5px;
+}
+
+.image_post_footer:hover {
+  -webkit-filter: brightness(60%);
+          filter: brightness(60%);
 }
 
 .footer_2 {
@@ -2340,9 +2407,9 @@ button:focus {
 .text_1_footer {
   font-size: 13px;
   font-family: "Montserrat";
-  color: #555555;
   line-height: 1.538;
   font-weight: 400;
+  color: #555555;
   padding: 0 10px 0 10px;
   border-right: 1px solid #555555;
 }
